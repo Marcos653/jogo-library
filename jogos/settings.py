@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'core',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
 ]
 
 ROOT_URLCONF = 'jogos.urls'
@@ -135,3 +138,5 @@ MEDIA_ROOT = 'images'
 MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())
+
+CORS_ALLOW_ALL_ORIGINS_ALL=True
