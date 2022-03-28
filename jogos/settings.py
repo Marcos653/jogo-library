@@ -124,8 +124,9 @@ USE_TZ = True
 CORS_ALLOWED_ORIGINS_ALL=True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
-        #'localhost:9000',
-        #'localhost:5000',
+        'localhost:8000',
+        'localhost:3000',
+        'localhost:8080',
         #'127.0.0.1:9000',
         #'127.0.0.1:5000',
     )
