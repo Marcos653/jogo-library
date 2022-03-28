@@ -121,12 +121,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://example.com",
-    "https://sub.example.com",
-    "http://localhost:8080",
-    "http://127.0.0.1:3000",
-]
+CORS_ALLOWED_ORIGINS_ALL=True
 
 
 # Static files (CSS, JavaScript, Images)
