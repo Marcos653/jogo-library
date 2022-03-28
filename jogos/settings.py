@@ -122,6 +122,31 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ALLOWED_ORIGINS_ALL=True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = (
+        #'localhost:9000',
+        #'localhost:5000',
+        #'127.0.0.1:9000',
+        #'127.0.0.1:5000',
+    )
+
+CORS_ALLOW_METHODS = (
+        'GET',
+        'POST',
+        'PUT',
+        'PATCH',
+        'DELETE',
+        'OPTIONS'
+)
+
+CORS_ALLOW_HEADERS = (
+        'x-requested-with',
+        'content-type',
+        'accept',
+        'origin',
+        'authorization',
+        'x-csrftoken'
+)
 
 
 # Static files (CSS, JavaScript, Images)
