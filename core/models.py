@@ -8,7 +8,8 @@ class Jogo(models.Model):
     price = models.IntegerField(null=True, blank=True)
     genre = models.CharField(max_length=255, null=True, blank=True)
     platform = models.CharField(max_length=255, null=True, blank=True)
-    image = models.ImageField(upload_to='image', null=True, blank=True)
+    # image = models.ImageField(upload_to='image', null=True, blank=True)
+    link_image = models.CharField(max_length=255, null=True, blank=True)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
 

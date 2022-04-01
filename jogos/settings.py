@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['https://jogo-library.herokuapp.com/']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
-    'django_filters',
+    # 'django_filters',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
