@@ -10,7 +10,7 @@ class Category(models.Model):
 class Jogo(models.Model):
     title = models.CharField(max_length=255, null=True, blank=True)
     price = models.FloatField(null=True, blank=True)
-    categories = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True)
+    categories = models.ManyToManyField(Category, null=True, blank=True)
     platform = models.CharField(max_length=255, null=True, blank=True)
     link_image = models.CharField(max_length=255, null=True, blank=True)
     describe = models.TextField(null=True, blank=True)
