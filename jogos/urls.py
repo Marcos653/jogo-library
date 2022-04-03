@@ -18,11 +18,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from core.api.viewSets import JogoViewSet, CategoryViewSet
+from core.api.viewSets import JogoViewSet
 
 router = DefaultRouter()
 router.register(r'jogo', JogoViewSet)
-router.register(r'category', CategoryViewSet)
+# router.register(r'category', CategoryViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

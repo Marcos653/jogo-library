@@ -1,19 +1,19 @@
-from core.models import Jogo, Category
+from core.models import Jogo
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 
-class CategorySerializer(ModelSerializer):
+# class CategorySerializer(ModelSerializer):
 
-    jogos = serializers.SerializerMethodField()
+#     jogos = serializers.SerializerMethodField()
 
-    def get_jogos(self, obj):
-        jogos = Jogo.objects.filter(categories=obj.id)
-        return JogoSerializer(jogos, many=True).data
+#     def get_jogos(self, obj):
+#         jogos = Jogo.objects.filter(categories=obj.id)
+#         return JogoSerializer(jogos, many=True).data
 
 
-    class Meta:
-        model = Category
-        fields = '__all__' 
+#     class Meta:
+#         model = Category
+#         fields = '__all__' 
 class JogoSerializer(ModelSerializer):
     # categories = CategorySerializer(many=True)
 
@@ -26,7 +26,7 @@ class JogoSerializer(ModelSerializer):
     class Meta:
         model = Jogo
         fields = '__all__' 
-        depth = 1
+        # depth = 1
 
  
       
