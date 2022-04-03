@@ -5,11 +5,11 @@ from core.models import Category, Jogo
 from .serializers import CategorySerializer, JogoSerializer
 
 class CategoryViewSet(ModelViewSet):
-    queryset = Category.objects.all()
+    queryset = Category.objects.order_by('category')
     serializer_class = CategorySerializer
     
 class JogoViewSet(ModelViewSet):
-    queryset = Jogo.objects.all()
+    queryset = Jogo.objects.order_by('title')
     serializer_class = JogoSerializer
 
     @action(detail=False, methods=['get'], url_path='filter')
