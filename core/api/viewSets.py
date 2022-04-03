@@ -1,12 +1,13 @@
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
-from rest_framework.decorators import api_view, permission_classes, action
-from core.models import Jogo
-from .serializers import JogoSerializer
+from rest_framework.decorators import action
+from core.models import Category, Jogo
+from .serializers import CategorySerializer, JogoSerializer
 
-# class CategoryViewSet(ModelViewSet):
-#     queryset = Category.objects.all()
-#     serializer_class = CategorySerializer    
+class CategoryViewSet(ModelViewSet):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+    
 class JogoViewSet(ModelViewSet):
     queryset = Jogo.objects.all()
     serializer_class = JogoSerializer
