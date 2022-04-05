@@ -9,8 +9,8 @@ class Category(models.Model):
 
 class Jogo(models.Model):
     title = models.CharField(max_length=255, null=True, blank=True)
-    price = models.FloatField(null=True, blank=True)
-    categories = models.ManyToManyField(Category, null=False, blank=False)
+    price = models.DecimalField(null=True, blank=True, max_digits=13, decimal_places=2)
+    categories = models.ManyToManyField(Category, null=True, blank=True)
     platform = models.CharField(max_length=255, null=True, blank=True)
     link_image = models.CharField(max_length=255, null=True, blank=True)
     describe = models.TextField(null=True, blank=True)
@@ -19,3 +19,4 @@ class Jogo(models.Model):
 
     def __str__(self):
         return self.title
+     
