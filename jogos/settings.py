@@ -124,14 +124,14 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS_ALL=True
 CORS_ALLOW_CREDENTIALS = True
-# CORS_ORIGIN_WHITELIST = (
-#         'http://127.0.0.1:8000',
-#         'http://127.0.0.1:7000',
-#         'http://127.0.0.1:3000',
-#         'http://127.0.0.1:8080',
-#         'https://serra-games.vercel.app',
+CORS_ORIGIN_WHITELIST = (
+        'http://127.0.0.1:8000',
+        'http://127.0.0.1:7000',
+        'http://127.0.0.1:3000',
+        'http://127.0.0.1:8080',
+        'https://serra-games.vercel.app',
 
-#     )
+    )
 
 CORS_ALLOW_METHODS = (
         'GET',
@@ -140,6 +140,7 @@ CORS_ALLOW_METHODS = (
         'PATCH',
         'DELETE',
         'OPTIONS'
+        'filter'
 )
 
 CORS_ALLOW_HEADERS = (
