@@ -123,34 +123,33 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ALLOWED_ORIGINS_ALL=True
-CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-        'http://127.0.0.1:8000',
-        'http://127.0.0.1:7000',
-        'http://127.0.0.1:3000',
-        'http://127.0.0.1:8080',
-        'https://serra-games.vercel.app',
+# CORS_ALLOW_CREDENTIALS = True
+# CORS_ORIGIN_WHITELIST = (
+#         'http://127.0.0.1:8000',
+#         'http://127.0.0.1:7000',
+#         'http://127.0.0.1:3000',
+#         'http://127.0.0.1:8080',
+#         'https://serra-games.vercel.app',
 
-    )
+#     )
 
-CORS_ALLOW_METHODS = (
-        'GET',
-        'POST',
-        'PUT',
-        'PATCH',
-        'DELETE',
-        'OPTIONS'
-        'filter'
-)
+# CORS_ALLOW_METHODS = (
+#         'GET',
+#         'POST',
+#         'PUT',
+#         'PATCH',
+#         'DELETE',
+#         'OPTIONS'
+# )
 
-CORS_ALLOW_HEADERS = (
-        'x-requested-with',
-        'content-type',
-        'accept',
-        'origin',
-        'authorization',
-        'x-csrftoken'
-)
+# CORS_ALLOW_HEADERS = (
+#         'x-requested-with',
+#         'content-type',
+#         'accept',
+#         'origin',
+#         'authorization',
+#         'x-csrftoken'
+# )
 
 
 # Static files (CSS, JavaScript, Images)
