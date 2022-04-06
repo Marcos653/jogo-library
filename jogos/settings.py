@@ -134,8 +134,8 @@ CORS_ORIGIN_WHITELIST = (
     )
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^https://\w+\.serra-games.vercel\.app$",
-    r"^https://\serra-games.vercel\.app$",
+        r"^https://\w+\.serra-games.vercel\.app$",
+        r"^https://\serra-games.vercel\.app$",
 ]
 
 
@@ -146,15 +146,19 @@ CORS_ALLOW_METHODS = (
         'PATCH',
         'DELETE',
         'OPTIONS'
+        'Get title'
 )
 
 CORS_ALLOW_HEADERS = (
-        'x-requested-with',
-        'content-type',
-        'accept',
-        'origin',
-        'authorization',
-        'x-csrftoken'
+        "accept",
+        "accept-encoding",
+        "authorization",
+        "content-type",
+        "dnt",
+        "origin",
+        "user-agent",
+        "x-csrftoken",
+        "x-requested-with",
 )
 
 
