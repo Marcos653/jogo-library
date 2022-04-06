@@ -141,6 +141,10 @@ CORS_ALLOWED_ORIGINS  =  [
     'https://serra-games.vercel.app',
 ]    
 
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://\w+\.serra-games.vercel\.app$",
+]
+
 
 CORS_ALLOW_METHODS = (
         'GET',
