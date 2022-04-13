@@ -14,6 +14,8 @@ class Jogo(models.Model):
     platform = models.CharField(max_length=255, null=True, blank=True)
     link_image = models.CharField(max_length=255, null=True, blank=True)
     describe = models.TextField(null=True, blank=True)
+    storage = models.CharField(max_length=255, null=True, blank=True)
+    year = models.IntegerField(default=0, null=True, blank=True)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
 
