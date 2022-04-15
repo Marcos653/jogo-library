@@ -16,6 +16,7 @@ class Jogo(models.Model):
     describe = models.TextField(null=True, blank=True)
     storage = models.CharField(max_length=255, null=True, blank=True)
     year = models.IntegerField(default=0, null=True, blank=True)
+    available = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
 
